@@ -1,0 +1,59 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>head}}
+{{/head}}
+
+{{$propositionHeader}}
+  {{>propositional_navigation_alpha}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$pageTitle}}
+	Tax-Free Childcare
+{{/pageTitle}}
+
+{{$content}}
+<main id="content" role="main">
+  <div class="inner-block">
+
+      <h1 class="heading-xlarge">
+        Tax-Free Childcare
+      </h1>
+
+
+		<form action="/check-esc" class="form" method="post">
+            <fieldset class="inline">
+              <legend class="heading-large">
+              	Employer Supported Childcare
+              </legend>
+
+              <p class="form-label">Are you currently claiming employer supported childcare?</p>
+
+              <label for="claiming-esc-yes" class="block-label">
+                <input id="claiming-esc-yes" type="radio" name="radio-inline-group" value="Yes">
+                Yes
+              </label>
+              <label for="claiming-esc-no" class="block-label">
+                <input id="claiming-esc-no" type="radio" name="radio-inline-group" value="No">
+                No
+              </label>
+            </fieldset>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Save and continue">
+        </div>
+
+        </form>
+
+        <a href="#">Back</a>
+
+      </form>
+
+  </div>
+</main>
+{{/content}}
+
+
+{{/govuk_template}}

@@ -2,10 +2,18 @@ module.exports = {
   bind : function (app, assetPath) {
     app.get('/', function (req, res) {
 
-      res.render('index',
+      res.render('tfc/index',
                 {'assetPath' : assetPath});
 
     });
+
+    app.post('/check-esc', function (req, res) {
+
+      console.log("in the fucker");
+      res.render('tfc/check', {'assetPath' : assetPath });
+    });
+
+    /* Samples */
 
     app.get('/sample', function (req, res) {
 
