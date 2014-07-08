@@ -7,10 +7,23 @@ module.exports = {
 
     });
 
-    app.post('/check-esc', function (req, res) {
+    app.get('/apply', function (req, res) {
 
-      console.log("in the fucker");
-      res.render('tfc/check', {'assetPath' : assetPath });
+      res.render('tfc/apply',
+                {'assetPath' : assetPath});
+
+    });
+
+    app.post('/apply', function (req, res) {
+
+      res.render('tfc/apply',
+                {'assetPath' : assetPath});
+
+    });
+
+    app.get('/renew', function (req, res) {
+
+      res.render('tfc/renew', {'assetPath' : assetPath });
     });
 
     /* Samples */

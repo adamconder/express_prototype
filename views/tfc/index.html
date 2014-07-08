@@ -1,59 +1,51 @@
-{{<govuk_template}}
-
-{{$head}}
-  {{>head}}
-{{/head}}
-
-{{$propositionHeader}}
-  {{>propositional_navigation_alpha}}
-{{/propositionHeader}}
-
-{{$headerClass}}with-proposition{{/headerClass}}
+{{<examples/alpha/alpha_layout}}
 
 {{$pageTitle}}
-	Tax-Free Childcare
+  Tax-Free Childcare
 {{/pageTitle}}
 
 {{$content}}
 <main id="content" role="main">
+
   <div class="inner-block">
 
-      <h1 class="heading-xlarge">
-        Tax-Free Childcare
-      </h1>
+  {{>includes/tfc-header}}
 
+  <h2 class="heading-medium">Are you creating a new Tax-Free Childcare application or are you a renewing your application?</h2>
 
-		<form action="/check-esc" class="form" method="post">
-            <fieldset class="inline">
-              <legend class="heading-large">
-              	Employer Supported Childcare
-              </legend>
+  <div class="grid-wrapper">
 
-              <p class="form-label">Are you currently claiming employer supported childcare?</p>
+    <div class="grid grid-1-2">
+      <div class="inner-block">
+        <h2 class="heading-medium">Apply for Tax-Free Childcare</h2>
 
-              <label for="claiming-esc-yes" class="block-label">
-                <input id="claiming-esc-yes" type="radio" name="radio-inline-group" value="Yes">
-                Yes
-              </label>
-              <label for="claiming-esc-no" class="block-label">
-                <input id="claiming-esc-no" type="radio" name="radio-inline-group" value="No">
-                No
-              </label>
-            </fieldset>
-
-        <div class="form-group">
-          <input type="submit" class="button" value="Save and continue">
+        <div class="text panel-indent">
+          <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
 
-        </form>
+        <a href="/apply" class="button button-get-started">Start now</a>
 
-        <a href="#">Back</a>
+      </div>
+    </div>
+    <div class="grid grid-1-2">
+      <div class="inner-block">
+        <h2 class="heading-medium">Renew your Tax-Free Childcare application</h2>
+        <div class="text panel-indent">
+          <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
 
-      </form>
+        <a href="/renew" class="button">Renew</a>
+      </div>
+    </div>
+
+      <a href="#">Back</a>
+  </div>
 
   </div>
+
 </main>
 {{/content}}
 
+{{/examples/alpha/alpha_layout}}
 
-{{/govuk_template}}
+

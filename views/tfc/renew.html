@@ -1,0 +1,67 @@
+{{<examples/alpha/alpha_layout}}
+
+{{$pageTitle}}
+	Tax-Free Childcare
+{{/pageTitle}}
+
+{{$content}}
+<main id="content" role="main">
+  <div class="inner-block">
+
+  {{>includes/tfc-header}}
+
+  <h2 class="heading-medium">Renew your Tax-Free Childcare application</h2>
+
+		<form action="/tfc/check" class="form" method="post">
+            <fieldset class="inline">
+              <legend class="heading-medium">
+              	Employer supported childcare
+              </legend>
+
+              <p class="form-label">Are you currently claiming employer supported childcare?</p>
+              <!-- <span class="form-hint">A change of circumstances can be anything from a change of household to a change of employer.</span> -->
+
+              <label for="claiming-esc-yes" class="block-label">
+                <input id="claiming-esc-yes" type="radio" name="radio-inline-group" value="Yes">
+                Yes
+              </label>
+              <label for="claiming-esc-no" class="block-label">
+                <input id="claiming-esc-no" type="radio" name="radio-inline-group" value="No">
+                No
+              </label>
+            </fieldset>
+
+            <fieldset class="inline">
+              <legend class="heading-medium">
+                Change of employer
+              </legend>
+
+              <p class="form-label">Have you had a change of employer since the last eligibility period?</p>
+              <!-- <span class="form-hint">A change of circumstances can be anything from a change of household to a change of employer.</span> -->
+
+              <label for="claiming-esc-yes" class="block-label">
+                <input id="claiming-esc-yes" type="radio" name="radio-inline-group" value="Yes">
+                Yes
+              </label>
+              <label for="claiming-esc-no" class="block-label">
+                <input id="claiming-esc-no" type="radio" name="radio-inline-group" value="No">
+                No
+              </label>
+            </fieldset>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Save and continue">
+        </div>
+
+        </form>
+
+        <a href="#">Back</a>
+
+      </form>
+
+  </div>
+</main>
+{{/content}}
+
+
+{{/examples/alpha/alpha_layout}}
