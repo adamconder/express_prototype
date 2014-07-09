@@ -106,7 +106,7 @@ module.exports = function(grunt){
     'grunt-contrib-watch',
     'grunt-sass',
     'grunt-execute',
-    // 'grunt-nodemon',
+    'grunt-nodemon',
     'grunt-text-replace',
     'grunt-concurrent'
   ].forEach(function (task) {
