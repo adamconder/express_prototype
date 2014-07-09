@@ -1,0 +1,50 @@
+{{<examples/alpha/alpha_layout}}
+
+{{$pageTitle}}
+  Tax-Free Childcare
+{{/pageTitle}}
+
+{{$content}}
+<main id="content" role="main">
+
+  <div class="inner-block">
+
+  {{>includes/tfc-header}}
+
+<p class="font-medium form-hint">Step 3 of 10</p>
+
+    <form action="/children" class="form" method="post">
+
+            <!-- personal details -->
+
+            <fieldset class="inline">
+               <legend class="heading-medium">
+                Personal Details
+              </legend>
+
+              <!-- National insurance number -->
+
+              <div class="form-group">
+                    <label for="full-name-f2" class="form-label">National Insurance Number
+                      <span class="form-hint">It'll be on your last payslip. For example, JH 21 90 0A.</span>
+                    </label>
+                    <input type="text" class="form-control" id="full-name-f2">
+                  </div>
+            </fieldset>
+
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Save and continue">
+        </div>
+
+        <a href="#">Back</a>
+
+      </form>
+
+  </div>
+</main>
+{{/content}}
+
+{{/examples/alpha/alpha_layout}}
+
+

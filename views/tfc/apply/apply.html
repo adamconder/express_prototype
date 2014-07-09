@@ -1,0 +1,60 @@
+{{<examples/alpha/alpha_layout}}
+
+{{$pageTitle}}
+  Tax-Free Childcare
+{{/pageTitle}}
+
+{{$content}}
+<main id="content" role="main">
+
+  <div class="inner-block">
+
+  {{>includes/tfc-header}}
+
+  {{>includes/tfc-steps}}
+
+    <form action="/children" class="form" method="post">
+
+          <!-- Employer supported childcare -->
+
+            <fieldset class="inline form-group">
+              <legend class="heading-medium">
+                Employer Supported Childcare
+              </legend>
+
+              <p class="form-label">Are you currently claiming employer supported childcare?</p>
+
+              <div class="form-group form-group-related">
+                  <label for="radio-indent-1" class="block-label selected" data-target="esc-yes">
+                    <input id="radio-indent-1" type="radio" name="radio-indent-group" value="Yes">
+                    Yes
+                  </label>
+                  <label for="radio-indent-2" class="block-label">
+                    <input id="radio-indent-2" type="radio" name="radio-indent-group" value="No">
+                    No
+                  </label>
+              </div>
+            </fieldset>
+
+             <div class="toggle-content" id="esc-yes" style="clear: both;">
+             <div class="validation-summary">
+                <span style="display:inline-block;" class="icon icon-important"></span><span>Before you can contiue to claim Tax Free Childcare you must cancel your Employer Supported Childcare application</span>
+                </div>
+             </div>
+
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Save and continue">
+        </div>
+
+        <a href="#">Back</a>
+
+      </form>
+
+  </div>
+</main>
+{{/content}}
+
+{{/examples/alpha/alpha_layout}}
+
+

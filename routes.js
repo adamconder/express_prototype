@@ -9,7 +9,7 @@ module.exports = {
 
     app.get('/apply', function (req, res) {
 
-      res.render('tfc/apply',
+      res.render('tfc/apply/apply',
                 {'assetPath' : assetPath});
 
     });
@@ -21,6 +21,23 @@ module.exports = {
 
     });
 
+// children decleration
+    app.post('/children', function (req, res) {
+
+      res.render('tfc/apply/children',
+                {'assetPath' : assetPath});
+
+    });
+
+    // personal details
+    app.get('/personal-details', function (req, res) {
+
+      res.render('tfc/apply/personal-details',
+                {'assetPath' : assetPath});
+
+    });
+
+    // renewing
     app.get('/renew', function (req, res) {
 
       res.render('tfc/renew', {'assetPath' : assetPath });

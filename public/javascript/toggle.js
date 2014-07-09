@@ -53,6 +53,7 @@ $(document).ready(function() {
 
       var target = $('input:checked').parent().attr('data-target');
       $('#'+target).show();
+      console.log(target);  
 
     });
 
