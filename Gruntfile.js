@@ -80,7 +80,7 @@ module.exports = function(grunt){
       }
     },
 
-/*
+
     // nodemon watches for changes and restarts app
     nodemon: {
       dev: {
@@ -92,7 +92,6 @@ module.exports = function(grunt){
       }
     },
 
-*/
     concurrent: {
         target: {
             tasks: ['watch', 'execute'],
@@ -107,7 +106,7 @@ module.exports = function(grunt){
     'grunt-contrib-watch',
     'grunt-sass',
     'grunt-execute',
-    // 'grunt-nodemon',
+    'grunt-nodemon',
     'grunt-text-replace',
     'grunt-concurrent'
   ].forEach(function (task) {
