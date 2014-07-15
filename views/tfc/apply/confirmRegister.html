@@ -1,0 +1,78 @@
+{{<examples/alpha/alpha_layout}}
+
+{{$pageTitle}}
+  Tax-Free Childcare
+{{/pageTitle}}
+
+{{$content}}
+<main id="content" role="main">
+
+  <div class="inner-block">
+
+  {{>includes/tfc-header}}
+
+
+    <form action="/registerSuccess" class="form" method="post">
+			<div class="grid-wrapper">
+				<div class="grid-wrapper">
+					<div class="grid grid-1-2">
+						<div class="inner-block">
+							<h3 class="heading-medium">Please confirm your details</h3>
+						</div> 
+					</div>
+				</div>
+					
+				<div class="grid-wrapper">
+				
+				<table>
+		            <thead>
+		              <tr>
+		                <th>Data asked</th>
+		                <th>Data provided</th>
+		              </tr>
+		            </thead>
+		            <tbody>
+		              <tr>
+		                <td>First Name</td>
+		                <td>Fred</td>
+		              </tr>
+		              <tr>
+		                <td>Last Name</td>
+		                <td>Foo</td>
+		              </tr>
+		              <tr>
+		               <td>Sex</td>
+		                <td>Male</td>
+		              </tr>
+		               <tr>
+		                <td>Date of birth</td>
+		                <td>14 07 2014</td>
+		              </tr>
+		               <tr>
+		                <td>What is your employment type?</td>
+		                <td>Government Employee</td>
+		              </tr>
+		            </tbody>
+		          </table>
+		          
+				</div>	
+					
+				<div class="grid-wrapper">
+				<div class="grid grid-1-2"> &nbsp;</div>
+				<div class="form-group">
+				  <a href="/registerSuccess" class="button">Confirm Register</a>
+				</div>
+				</div>
+				
+				
+			</div>
+
+      </form>
+
+  </div>
+</main>
+{{/content}}
+
+{{/examples/alpha/alpha_layout}}
+
+

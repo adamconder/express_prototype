@@ -80,8 +80,6 @@ module.exports = {
     
     // Login pages
     
-   
-    
     app.get('/login', function (req, res) {
 
         res.render('tfc/apply/login',

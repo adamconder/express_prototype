@@ -1,0 +1,65 @@
+{{<examples/alpha/alpha_layout}}
+
+{{$pageTitle}}
+  Tax-Free Childcare
+{{/pageTitle}}
+
+{{$content}}
+<main id="content" role="main">
+
+  <div class="inner-block">
+
+  {{>includes/tfc-header}}
+
+
+    <form action="/customerInformation" class="form" method="post">
+			<div class="grid-wrapper">
+				<div class="grid-wrapper">
+					<div class="grid grid-1-2">
+						<div class="inner-block">
+							<p class="lede">Please enter your login credentials</p>
+						</div> 
+					</div>
+				</div>
+					
+				<div class="grid-wrapper">
+					<div class="form-group">
+						<div class="grid grid-1-2">
+							<div class="inner-block">
+								<label for="user-name-f1" class="form-label">User Name</label>
+								<input type="text" class="form-control" id="user-name-f1" required>
+							</div> 
+						</div>
+					</div>
+				</div>
+					
+				<div class="grid-wrapper">
+					<div class="form-group">
+						<div class="grid grid-1-2">
+							<div class="inner-block">
+								<label for="password-f1" class="form-label">Password</label>
+								<input type="password" class="form-control" id="password-f1">
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+				<div class="grid-wrapper">
+				<div class="grid grid-1-2"> &nbsp;</div>
+				<div class="form-group">
+				   <input type="submit" class="button" value="Signin">
+				</div>
+				</div>
+				
+				
+			</div>
+
+      </form>
+
+  </div>
+</main>
+{{/content}}
+
+{{/examples/alpha/alpha_layout}}
+
+
