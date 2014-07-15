@@ -77,6 +77,40 @@ module.exports = {
     app.get('/examples/elements/forms', function (req, res) {
       res.render('examples/elements/forms', {'assetPath' : assetPath });
     });
+    
+    // Login pages
+    
+   
+    
+    app.get('/login', function (req, res) {
+
+        res.render('tfc/apply/login',
+                  {'assetPath' : assetPath});
+
+      });
+    
+    app.post('/customerInformation', function (req, res) {
+    	
+    		res.render('tfc/apply/customerInformation',
+                    {'assetPath' : assetPath, error :"First Name is required"} );
+    	
+      });
+    
+    
+    app.get('/confirmRegister', function (req, res) {
+    	
+    	
+        res.render('tfc/apply/confirmRegister',
+                  {'assetPath' : assetPath});
+
+      });
+    
+    app.get('/registerSuccess', function (req, res) {
+
+        res.render('tfc/apply/registerSuccess',
+                  {'assetPath' : assetPath});
+
+      });
 
   }
 };
