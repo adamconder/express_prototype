@@ -11,7 +11,7 @@
 
   {{>includes/tfc-header}}
 
-  <h2 class="heading-medium">Are you creating a new Tax-Free Childcare application or are you a renewing your application? Ranga made a change here</h2>
+  <h2 class="heading-medium">Are you creating a new Tax-Free Childcare application or are you a renewing your application?</h2>
 
   <div class="grid-wrapper">
 
